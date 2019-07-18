@@ -7,4 +7,5 @@
 </ul>
 
 <br>
-<%= link_to "Index of Tags", tags_path %>
+<%= link_to "Index of Tags", tags_path %> <br/>
+<%= link_to "Delete Tag", tag_path(@tag), method: :delete, data: {confirm: "Really Delete Tag?"}%>
